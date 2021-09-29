@@ -1,0 +1,13 @@
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\bin\Debug\netstandard2.0\BookTaxi2.deps.json
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\bin\Debug\netstandard2.0\BookTaxi2.dll
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\bin\Debug\netstandard2.0\BookTaxi2.pdb
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\obj\Debug\netstandard2.0\BookTaxi2.csproj.AssemblyReference.cache
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\obj\Debug\netstandard2.0\BookTaxi2.AssemblyInfoInputs.cache
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\obj\Debug\netstandard2.0\BookTaxi2.AssemblyInfo.cs
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\obj\Debug\netstandard2.0\BookTaxi2.csproj.CoreCompileInputs.cache
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\obj\Debug\netstandard2.0\BookTaxi2.dll
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\obj\Debug\netstandard2.0\BookTaxi2.pdb
+D:\Demo\BookTaxi2\BookTaxi2\BookTaxi2\obj\Debug\netstandard2.0\BookTaxi2.GeneratedMSBuildEditorConfig.editorconfig

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="TestAsyncFunsion.Views.TestComboBox">
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
+            <combobox:SfComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="{Binding Image}" WidthRequest="12"/>
+                        <Label Text="{Binding Name}" />
+                    </StackLayout>
+                </DataTemplate>
+            </combobox:SfComboBox.ItemTemplate>
+            <combobox:SfComboBox.DropDownHeaderView>
+                <StackLayout BackgroundColor="#f0f0f0" >
+                    <Label  x:Name="label2" FontSize="20" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#006bcd" />
+                </StackLayout>
+            </combobox:SfComboBox.DropDownHeaderView>
+        </combobox:SfComboBox>
+    </StackLayout>
+</ContentPage>

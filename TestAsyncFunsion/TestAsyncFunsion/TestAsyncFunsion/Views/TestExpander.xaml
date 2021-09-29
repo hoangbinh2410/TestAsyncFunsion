@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Accordion;assembly=Syncfusion.Expander.XForms"
+             x:Class="TestAsyncFunsion.Views.TestExpander">
+    <syncfusion:SfAccordion x:Name="Accordion" Collapsing="Accordion_Collapsing"  BindableLayout.ItemsSource="{Binding Info}">
+        <BindableLayout.ItemTemplate>
+            <DataTemplate>
+                <syncfusion:AccordionItem>
+                    <syncfusion:AccordionItem.Header>
+                        <Grid>
+                            <Label Text="{Binding Name}"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Header>
+                    <syncfusion:AccordionItem.Content>
+                        <Grid>
+                            <Label Text="{Binding Description}"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Content>
+                </syncfusion:AccordionItem>
+            </DataTemplate>
+        </BindableLayout.ItemTemplate>
+    </syncfusion:SfAccordion>
+</ContentPage>

@@ -1,0 +1,13 @@
+D:\Demo\BookTaxiApp\Project\Project\obj\Debug\netstandard2.0\Project.csproj.AssemblyReference.cache
+D:\Demo\BookTaxiApp\Project\Project\obj\Debug\netstandard2.0\Project.GeneratedMSBuildEditorConfig.editorconfig
+D:\Demo\BookTaxiApp\Project\Project\bin\Debug\netstandard2.0\Project.deps.json
+D:\Demo\BookTaxiApp\Project\Project\bin\Debug\netstandard2.0\Project.dll
+D:\Demo\BookTaxiApp\Project\Project\bin\Debug\netstandard2.0\Project.pdb
+D:\Demo\BookTaxiApp\Project\Project\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Demo\BookTaxiApp\Project\Project\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\Demo\BookTaxiApp\Project\Project\obj\Debug\netstandard2.0\Project.AssemblyInfoInputs.cache
+D:\Demo\BookTaxiApp\Project\Project\obj\Debug\netstandard2.0\Project.AssemblyInfo.cs
+D:\Demo\BookTaxiApp\Project\Project\obj\Debug\netstandard2.0\Project.csproj.CoreCompileInputs.cache
+D:\Demo\BookTaxiApp\Project\Project\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Demo\BookTaxiApp\Project\Project\obj\Debug\netstandard2.0\Project.dll
+D:\Demo\BookTaxiApp\Project\Project\obj\Debug\netstandard2.0\Project.pdb

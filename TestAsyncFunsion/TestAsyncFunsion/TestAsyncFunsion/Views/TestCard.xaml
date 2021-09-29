@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="TestAsyncFunsion.Views.TestCard">
+    <cards:SfCardLayout SwipeDirection="Left" 
+                        VisibleCardIndex="2"
+                        HeightRequest="500"
+                        ShowSwipedCard="true"
+                       
+                        BackgroundColor="#F0F0F0">
+
+        <cards:SfCardView  FadeOutOnSwiping="true">
+            <Label  Text="Cyan" BackgroundColor="Cyan"/>
+        </cards:SfCardView>
+
+        <cards:SfCardView  FadeOutOnSwiping="False">
+            <Label  Text="Yellow" BackgroundColor="Yellow"/>
+        </cards:SfCardView>
+
+        <cards:SfCardView >
+            <Label  Text="Orange" BackgroundColor="Orange"/>
+        </cards:SfCardView>
+
+    </cards:SfCardLayout>
+    <!--<StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+        <cards:SfCardView BorderColor="Black" BorderWidth="5" FadeOutOnSwiping="true" CornerRadius="30,0,30,0" BackgroundColor="LightPink"  >
+            <StackLayout Padding="10, 10, 0, 0" >
+                <Label  Text="New York" FontSize="25" />
+                <Label Text="Mon 3.00PM, Sunny" TextColor="Gray"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="31°" FontSize="70" Padding="0, 0, 10,0"/>
+                    <Image  Source="Sun.png" HeightRequest="100" WidthRequest="100"/>
+                </StackLayout>
+            </StackLayout>
+        </cards:SfCardView>
+        <cards:SfCardView IndicatorColor="Cyan"
+                          HeightRequest="300" 
+                          HasShadow="True"
+                          ShadowColor="Red" 
+                          IndicatorThickness="12" 
+                          IndicatorPosition="Left" >
+            <Label  Text="SfCardView" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        </cards:SfCardView>
+    </StackLayout>-->
+</ContentPage>

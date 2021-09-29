@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="TestAsyncFunsion.Views.TestCalendar">
+    <StackLayout>
+    <syncfusion:SfCalendar x:Name="calendar" SelectionMode="MultiSelection" ViewMode="YearView">
+        <syncfusion:SfCalendar.MonthViewSettings>
+            <syncfusion:MonthViewSettings 
+		CurrentMonthBackgroundColor="#800080"
+		CurrentMonthTextColor="#ffffff"
+		PreviousMonthBackgroundColor="#9895F0"
+		PreviousMonthTextColor="#000000"
+		DateSelectionColor="#ffffff"
+		SelectedDayTextColor="#000000"
+		DayHeaderFormat="EEEEE"
+		DayFontSize="12"
+		DayHeaderFontSize="14"
+		DayHeaderBackgroundColor="#fed766"
+		SelectionRadius="15"
+		TodaySelectionTextColor="Black"
+		TodaySelectionBackgroundColor="Green"
+		DayHeaderTextColor="Black"
+		HeaderBackgroundColor="Pink"
+		HeaderFontAttributes="Italic"
+		HeaderFontSize="16"
+		WeekEndTextColor="#fe4a49"
+		WeekEndBackgroundColor="#2ab7ca">
+                    <syncfusion:MonthViewSettings.CellTemplate>
+                    <DataTemplate>
+                        <Grid BackgroundColor="White">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image HorizontalOptions="Center" Source="Weather1.png" Grid.Row="0" Grid.Column="0"/>
+                            <Label Text="{Binding Day}" FontAttributes="Bold" TextColor="Black" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="1" FontSize="10"/>
+                            <Image HorizontalOptions="Center" Grid.Row="2" Source="Weather2.png" Grid.Column="2"/>
+                        </Grid>
+                    </DataTemplate>
+                    </syncfusion:MonthViewSettings.CellTemplate>
+                <!--<syncfusion:MonthViewSettings.HeaderFontFamily>
+                    <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+                </syncfusion:MonthViewSettings.HeaderFontFamily>
+                <syncfusion:MonthViewSettings.DayHeaderFontFamily>
+                    <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+                </syncfusion:MonthViewSettings.DayHeaderFontFamily>
+                <syncfusion:MonthViewSettings.DayCellFontFamily>
+                    <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+                </syncfusion:MonthViewSettings.DayCellFontFamily>-->
+            </syncfusion:MonthViewSettings>
+        </syncfusion:SfCalendar.MonthViewSettings>
+    </syncfusion:SfCalendar>
+    </StackLayout>
+</ContentPage>

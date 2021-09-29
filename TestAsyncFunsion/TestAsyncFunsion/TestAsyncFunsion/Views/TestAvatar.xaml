@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"          
+             xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="TestAsyncFunsion.Views.TestAvatar">
+    <StackLayout>
+        <StackLayout>
+            <border:SfBorder BorderColor="Red"
+              BackgroundColor="#ffb6c1" 
+              HorizontalOptions="Center" 
+              VerticalOptions="Center"
+              BorderWidth="3">
+                <sfavatar:SfAvatarView ContentType="Default"     
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            WidthRequest="50"
+                            BorderColor="red"
+                            AvatarShape="Circle"
+                            BorderWidth="20"
+                            ImageSource="girl2"                      
+                            HeightRequest="50"
+                            CornerRadius="25">
+                </sfavatar:SfAvatarView>
+            </border:SfBorder>
+            
+        </StackLayout>
+        <StackLayout>
+            <sfavatar:SfAvatarView ContentType="Default"     
+                            VerticalOptions="Center"
+                             AvatarShape="Square"
+                            HorizontalOptions="Center"
+                            WidthRequest="50"                          
+                            AvatarName="girl1"
+                            HeightRequest="50"
+                            CornerRadius="25">
+            </sfavatar:SfAvatarView>
+        </StackLayout>
+    </StackLayout>
+   
+  
+</ContentPage>

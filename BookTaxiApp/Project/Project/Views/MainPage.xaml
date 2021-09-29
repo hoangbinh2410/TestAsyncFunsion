@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Views.MainPage"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             Title="{Binding Title}">
+    <FlexLayout>
+        <Frame FlexLayout.Grow="1" BackgroundColor="Aqua">
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+        <yummy:PancakeView  CornerRadius="0,-50,0,0" OffsetAngle="20">
+            <yummy:PancakeView.BorderColor Color="#66FFCC" Thickness="10"/>
+            <yummy:PancakeView.BackgroundGradientStops>
+                <yummy:GradientStopCollection>
+                    <yummy:GradientStop Color="#FF0000" Offset="0" />
+                    <yummy:GradientStop Color="#00FF00" Offset="0.5" />
+                    <yummy:GradientStop Color="#0000FF" Offset="1" />
+                </yummy:GradientStopCollection>
+            </yummy:PancakeView.BackgroundGradientStops>
+            <FlexLayout>
+                <Frame BackgroundColor="Black" HeightRequest="100"/>
+            </FlexLayout>
+        </yummy:PancakeView>
+    </StackLayout>
+        </Frame>
+    </FlexLayout>
+    
+
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Publish2</_PublishTargetUrl>
+    <History>True|2021-08-19T10:10:54.6628406Z;False|2021-08-19T17:10:31.0817534+07:00;False|2021-08-19T17:10:01.9450336+07:00;False|2021-08-19T17:09:54.1516731+07:00;True|2021-08-19T16:44:24.8164535+07:00;False|2021-08-19T16:43:56.5487017+07:00;True|2021-08-19T16:31:02.8800433+07:00;</History>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="Ba_DemoAPI.Confixdb.DBconnect">
+      <Value>Data Source=.\SQLEXPRESS%3bInitial Catalog=AppDemo%3bIntegrated Security=True</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

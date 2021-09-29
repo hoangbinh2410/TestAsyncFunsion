@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfBarcode.XForms;assembly=Syncfusion.SfBarcode.XForms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="TestAsyncFunsion.Views.TestBarcode">
+    <StackLayout>
+        <syncfusion:SfBarcode BackgroundColor="Gray" Text="www.wikipedia.org" Symbology="QRCode">
+
+            <syncfusion:SfBarcode.SymbologySettings>
+
+                <syncfusion:QRBarcodeSettings XDimension="6"/>
+                <!--<syncfusion:Code39Setting BarHeight="45" EnableCheckDigit="False" EncodeStartStopSymbols="True" NarrowBarWidth="1" ShowCheckDigit="False"/>-->
+            </syncfusion:SfBarcode.SymbologySettings>
+        </syncfusion:SfBarcode>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="TestAsyncFunsion.Views.TestCheckBox">
+    <StackLayout>
+        <syncfusion:SfCheckBox x:Name="check" Text="CheckBox" IsChecked="True" CheckedColor="Green"/>
+        <syncfusion:SfCheckBox x:Name="uncheck" Text="CheckBox" UncheckedColor="Violet"/>
+        <syncfusion:SfCheckBox x:Name="indeterminate " Text="CheckBox" IsThreeState="True" IsChecked="{x:Null}" CheckedColor="Purple"/>
+        <syncfusion:SfCheckBox x:Name="checkBox" IsChecked="True" CheckedColor="Aqua" TickColor="Fuchsia" Text="CheckBox">
+            <syncfusion:SfCheckBox.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding ClickedCB}"/>
+            </syncfusion:SfCheckBox.GestureRecognizers>
+        </syncfusion:SfCheckBox>
+        <syncfusion:SfCheckBox Text="CheckBox">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <!--Trang thai da check-->
+                    <VisualState x:Name="Checked">
+                        <VisualState.Setters>
+                            <Setter Property="TextColor" Value="Accent"/>
+                            <Setter Property="CheckedColor" Value="Accent"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <!--Trang thai chua duoc check-->
+                    <VisualState x:Name="Unchecked">
+                        <VisualState.Setters>
+                            <Setter Property="TextColor" Value="#ea3737"/>
+                            <Setter Property="UncheckedColor" Value="#ea3737"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <!--Trangj thai t3-->
+                    <VisualState x:Name="Intermediate">
+                        <VisualState.Setters>
+                            <Setter Property="Text" Value="Intermediate State"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </syncfusion:SfCheckBox>
+    </StackLayout>
+</ContentPage>

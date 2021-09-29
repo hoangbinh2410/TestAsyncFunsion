@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="TestAsyncFunsion.Views.TestChip">
+    <StackLayout>
+        <!--<buttons:SfChipGroup 
+		VerticalOptions="Center" 
+		x:Name="inputChipGroup" ChipImageWidth="35" 
+		ItemsSource="{Binding InputItems,Mode=TwoWay}"
+		DisplayMemberPath="PersonName" 
+		ImageMemberPath="PersonImage" 
+		ShowIcon="True"
+		Type="Input" 
+		ChipPadding="8,8,0,0">
+            <buttons:SfChipGroup.InputView>
+                <Entry x:Name="entry"
+			VerticalOptions="Center" HeightRequest="40"
+			FontSize="15" 
+			WidthRequest="110" 			
+			Margin="10,10,0,0">
+                </Entry>
+            </buttons:SfChipGroup.InputView>
+            <buttons:SfChipGroup.ChipLayout>
+                <FlexLayout 
+			HorizontalOptions="Start" 
+			VerticalOptions="Center" 
+			Direction="Row" 
+			Wrap="Wrap" 
+			JustifyContent="Start" 
+			AlignContent="Start" 
+			AlignItems="Start"/>
+            </buttons:SfChipGroup.ChipLayout>
+        </buttons:SfChipGroup>-->
+        <buttons:SfChipGroup 
+	VerticalOptions="Center" 
+	ChipImageWidth="40" x:Name="choiceType"
+	ItemsSource="{Binding ChoiceItems,Mode=TwoWay}" 
+	ChipBackgroundColor="Transparent" 
+	SelectedChipBackgroundColor="Transparent" 
+	Type="Choice" 
+	ChipPadding="8,8,0,0">
+            <buttons:SfChipGroup.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <border:SfBorder CornerRadius="20" WidthRequest="40" HeightRequest="40" BorderColor="Transparent" >
+                            <Image Source="{Binding PersonImage}" Aspect="Fill" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </border:SfBorder>
+                        <Label Text="{ Binding PersonName}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </DataTemplate>
+            </buttons:SfChipGroup.ItemTemplate>
+            <buttons:SfChipGroup.ChipLayout>
+                <FlexLayout 
+						HorizontalOptions="Start" 
+						VerticalOptions="Center" 
+						Direction="Row" 
+						Wrap="Wrap" 
+						JustifyContent="Start" 
+						AlignContent="Start" 
+						AlignItems="Start"/>
+            </buttons:SfChipGroup.ChipLayout>
+        </buttons:SfChipGroup>
+    </StackLayout>
+</ContentPage>

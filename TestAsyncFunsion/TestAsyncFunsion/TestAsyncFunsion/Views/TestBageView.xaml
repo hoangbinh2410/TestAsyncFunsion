@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:badge ="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBadgeView.XForms"
+             x:Class="TestAsyncFunsion.Views.TestBageView">
+    <badge:SfBadgeView HorizontalOptions="Center" VerticalOptions="Center" >
+        <badge:SfBadgeView.Content>
+            <Image Source="girl2" HeightRequest="70" WidthRequest="60"/>
+        </badge:SfBadgeView.Content>
+        <badge:SfBadgeView.BadgeSettings>
+            <badge:BadgeSetting BadgeType="Warning"  Offset="0, -10" BadgePosition="BottomRight" BadgeIcon="Away"/>
+        </badge:SfBadgeView.BadgeSettings>
+    </badge:SfBadgeView>
+</ContentPage>

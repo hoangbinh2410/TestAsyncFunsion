@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             x:Class="TestAsyncFunsion.Views.TestAutoComplete">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <!--loc dữ liệu bình thường-->
+        <!--<autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     DisplayMemberPath="Name" 
+                                     AutoCompleteMode="SuggestAppend"
+                                     DataSource="{Binding EmployeeCollection}">
+            <autocomplete:SfAutoComplete.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="2,0,0,0">
+                        <Image Source="User.png" 
+                               WidthRequest="12"/>
+                        <Label Text="{Binding Name}" 
+                               VerticalOptions="Center" 
+                               WidthRequest="500"/>
+                    </StackLayout>
+                </DataTemplate>
+            </autocomplete:SfAutoComplete.ItemTemplate>
+        </autocomplete:SfAutoComplete>-->
+        <!--chọn nhiều dữ liệu-->
+        <autocomplete:SfAutoComplete x:Name="autoComplete" 
+                                     HeightRequest="40"
+                                     DropDownItemHeight="50" 
+                                     DisplayMemberPath="Name" 
+                                     ImageMemberPath="Image" 
+                                     MultiSelectMode="Token" 
+                                     TokensWrapMode="Wrap"
+                                     IsFocused="False"
+                                     DataSource="{Binding EmployeeCollection}">
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>

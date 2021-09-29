@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="TestAsyncFunsion.Views.TestCarousel">
+    <ContentPage.Content>
+        <carousel:SfCarousel x:Name="carousel"  
+                             BackgroundColor="Red"
+                             ItemsSource="{Binding ImageCollection}" 
+                             HeightRequest="400" 
+                             WidthRequest="400"
+                             RotationAngle="260"
+                             ItemHeight="170"
+                             ItemWidth="270"
+                             Offset="90"
+                             AllowLoadMore="True"			
+                             ViewMode="Default">
+            <carousel:SfCarousel.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Image Source="{Binding CaImage }" Aspect ="AspectFill">
+                        </Image>
+                    </StackLayout>
+                </DataTemplate>
+            </carousel:SfCarousel.ItemTemplate>
+        </carousel:SfCarousel>
+    </ContentPage.Content>
+</ContentPage>
